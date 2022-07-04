@@ -11,6 +11,7 @@ namespace DataStructure
             st.Push(30);
             st.Push(70);
             Console.WriteLine(st.ToString());
+            Console.WriteLine("The Peek Value is " + st.Peek());
         }
     }
 }
