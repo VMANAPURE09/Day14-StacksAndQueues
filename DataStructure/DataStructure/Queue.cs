@@ -28,6 +28,19 @@ namespace DataStructure
             obj[++rear] = data;
             return true;
         }
+        public int Dequeue()
+        {
+            if (front == -1)
+            {
+                Console.WriteLine("que is empty");
+                return default(int);
+            }
+            int ob = obj[front++];
+
+            if (front > rear)
+                front = rear = -1;
+            return ob;
+        }
         public override string ToString()
         {
             String s = "";

@@ -39,7 +39,7 @@ namespace DataStructure
 
         public override string ToString()
         {
-            String s = "";
+            String s = " ";
             for (int i = 0; i < capacity; i++)
             {
                 s = s + obj[i];
